@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+}
+
+p {
+    display: inline;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h3 {
+    margin: 0;
+}
+
+.header {
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(107, 150, 235);
+}
+
+#list-form-div {
+    padding-bottom: 5px;
+    background-color: rgb(107, 150, 235);
+    display: flex;
+}
+
+#new-list-form {
+    display: flex;
+    align-items: center;
+}
+
+#new-list-form > label {
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+#new-list-form > button {
+    margin-left: 15px;
+}
+
+#lists-container {
+    padding: 15px;
+    background-color: rgb(35, 32, 32);
+    display: grid;
+    row-gap: 15px;
+}
+
+.list-item {
+    background-color: rgb(225, 225, 225);
+}
+
+.list-item-header {
+    background-color: rgb(186, 186, 186);
+    padding: 10px;
+    display: grid;
+    align-items: center;
+}
+
+.list-item-header:hover {
+    cursor: pointer;
+}
+
+.list-details {
+    padding-left: 28px;
+    display: flex;
+    gap: 8px;
+}
+
+.tasks-container {
+    padding: 10px;
+    display: grid;
+    row-gap: 8px;
+}
+
+.tasks-list {
+    display: grid;
+    row-gap: 10px;
+}
+
+.task-item {
+    display: grid;
+    grid-template-columns: 20px auto;
+    column-gap: 8px;
+}
+
+.new-task-div {
+    padding-left: 27px;
+    display: flex;
+    gap: 5px;
+}

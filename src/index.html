@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+</head>
+<body>
+    <div id="page-container">
+        <div class="header">
+            <h1>Lists</h1>
+            <button type="button" id="add-list-button">+</button><br>
+        </div>
+        <div id="list-form-div">
+            <form action="" id="new-list-form" style="display:none">
+                <label for="new-list-name">Name:</label>
+                    <input type="text" name="new-list-name" id="new-list-name">
+                <label for="new-list-due-date">Due:</label>
+                    <input type="date" id="new-list-due-date">
+                <label for="new-list-priority">High Priority:</label>
+                    <input type="checkbox" id="new-list-priority">
+                <button type="submit" id="new-list-submit">Add</button>
+            </form>
+        </div>
+        <div id="lists-container">
+        </div>
+    </div>
+</body>
+<template id="list-template">
+    <div class="list-item">
+        <div class="list-item-header">
+            <h3 class="list-name"></h3>
+            <div class="list-details">
+                <p class="tasks-remaining"></p>
+                <p class="list-due"></p>
+            </div>
+        </div>
+        <div class="tasks-container">
+            <ul class="tasks-list">
+            </ul>
+            <div class="new-task-div">
+                <form action="" class="new-task-form">
+                    <input type="text" class="new-task-name" placeholder="New task">
+                    <button type="submit" class="new-task-btn">+</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</template>
+<template id="task-item-template">
+    <li class="task-item">
+        <input type="checkbox">
+        <label></label>
+    </li>
+</template>
+</html>
