@@ -7,32 +7,50 @@
 <script defer src="main.js"></script></head>
 <body>
     <div id="page-container">
-        <div id="lists-container">
-            <ul id="lists-ul">
-                <li class="list-item-container">
-                    <p class="name">List One</p>
-                    <p class="due-by">Due By: 5/1/25</p>
-                </li>
-            </ul>
-            <button type="button" id="add-list-button">+</button>
-            <form action="" id="new-list-form">
+        <div class="header">
+            <h1>Lists</h1>
+            <button type="button" id="add-list-button">+</button><br>
+        </div>
+        <div id="list-form-div">
+            <form action="" id="new-list-form" style="display:none">
                 <label for="new-list-name">Name:</label>
                     <input type="text" name="new-list-name" id="new-list-name">
-                <label for="new-list-due-date-option">Due Date</label>
-                    <input type="checkbox" id="new-list-due-date-option">
-                <label for="new-list-due-date">Enter Date:</label>
+                <label for="new-list-due-date">Due:</label>
                     <input type="date" id="new-list-due-date">
-                <label for="new-list-priority">Priority</label>
+                <label for="new-list-priority">High Priority:</label>
                     <input type="checkbox" id="new-list-priority">
-                <label for="new-list-description">Description:</label>
-                    <textarea id="new-list-description"></textarea>
+                <button type="submit" id="new-list-submit">Add</button>
             </form>
         </div>
-        <div id="tasks-container">
-            <ul id="tasks">
-
-            </ul>
+        <div id="lists-container">
         </div>
     </div>
 </body>
+<template id="list-template">
+    <div class="list-item">
+        <div class="list-item-header">
+            <h3 class="list-name"></h3>
+            <div class="list-details">
+                <p class="tasks-remaining"></p>
+                <p class="list-due"></p>
+            </div>
+        </div>
+        <div class="tasks-container">
+            <ul class="tasks-list">
+            </ul>
+            <div class="new-task-div">
+                <form action="" class="new-task-form">
+                    <input type="text" class="new-task-name" placeholder="New task">
+                    <button type="submit" class="new-task-btn">+</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</template>
+<template id="task-item-template">
+    <li class="task-item">
+        <input type="checkbox">
+        <label></label>
+    </li>
+</template>
 </html>
