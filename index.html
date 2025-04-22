@@ -8,11 +8,13 @@
 <body>
     <div id="page-container">
         <div class="header">
-            <h1>Lists</h1>
-            <button type="button" id="add-list-button">+</button><br>
+            <img id="dunn" src="5e33df03fb36caa0be4e.jpg" alt="Magnificent painting of Richard Dunn">
+            <h1 class="page-header-text">Dunn's Owed</h1>
+            <p class="subheader">Do it for him</p>
+            <button type="button" id="add-list-button">New List</button>
         </div>
-        <div id="list-form-div">
-            <form action="" id="new-list-form" style="display:none">
+        <div id="list-form-div" style="display:none">
+            <form action="" id="new-list-form">
                 <label for="new-list-name">Name:</label>
                     <input type="text" name="new-list-name" id="new-list-name">
                 <label for="new-list-due-date">Due:</label>
@@ -45,12 +47,16 @@
                 </form>
             </div>
         </div>
+        <div class="list-footer">
+            <button class="remove-completed">Remove Completed Tasks</button>
+            <button class="delete-list">Delete List</button>
+        </div>
     </div>
 </template>
 <template id="task-item-template">
     <li class="task-item">
         <input type="checkbox">
-        <label></label>
+        <label class="task-name"></label>
     </li>
 </template>
 </html>
